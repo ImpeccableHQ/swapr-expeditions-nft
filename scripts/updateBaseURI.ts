@@ -6,7 +6,7 @@ const deploy = async () => {
   const [deployer] = await ethers.getSigners();
   const nft = SwaprExpeditionsNFT__factory.connect(address || '', deployer);
   const tx = await nft.updateBaseURI(
-    'ipfs://QmcnHWGP8FzrfUTUFSZqiQf6buqtvtnSFShKKZPeNhxaaZ/'
+    'ipfs://QmPwWXBidvJjLC1At8f9yoqkPf8UkitwMEKGBRePVkkY3i'
   );
 
   console.log('Waiting at ' + tx.hash);
