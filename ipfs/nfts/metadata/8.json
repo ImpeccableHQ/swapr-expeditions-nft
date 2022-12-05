@@ -1,0 +1,19 @@
+{
+    "name": "Visions of Cessation",
+    "description": "You dream of the end. destruction and death beyond comprehension. A universe that lay in ruin. This NFT was claimable for 1000 Fragments in the initial Swapr Expeditions event. It grants the “cessation” profile accent at https://swapr.eth.limo/ to the NFT holder.",  
+    "image": "ipfs:/QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/8.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 100
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Epic"
+        }
+    ]
+  }

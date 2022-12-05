@@ -1,0 +1,19 @@
+{
+    "name": "Birth",
+    "description": "A shell of its former self, your home planet lay in a state of disarray. Mysterious creatures plague the surface, eradicating what little life remains in the once prosperous world. You WILL find a better world for your race. This NFT was claimable for 200 Fragments in the initial Swapr Expeditions event.",  
+    "image": "ipfs://QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/3.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 200
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Uncommon"
+        }
+    ]
+  }

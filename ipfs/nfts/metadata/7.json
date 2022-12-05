@@ -1,0 +1,19 @@
+{
+    "name": "Preparations",
+    "description": "A life of yearning. Searching for somewhere that may not exist. You make peace with your arrangement and take one final look at your home. This NFT was claimable for 800 Fragments in the initial Swapr Expeditions event.",  
+    "image": "ipfs://QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/7.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 800
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Epic"
+        }
+    ]
+  }

@@ -1,0 +1,19 @@
+{
+    "name": "Visions of Depth",
+    "description": "You dream of draught. THe fascinating environment that was stripped away from your world. Beauty beyond the beholder. This NFT was claimable for 600 Fragments in the initial Swapr Expeditions event. It grants the “depth” profile accent at https://swapr.eth.limo/ to the NFT holder.",  
+    "image": "ipfs://QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/6.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 600
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Rare"
+        }
+    ]
+  }

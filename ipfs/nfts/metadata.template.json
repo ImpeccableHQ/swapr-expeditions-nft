@@ -1,0 +1,19 @@
+{
+    "name": "Introspection",
+    "description": "A journey through space-time. A traversal of the lavendar sea. Discoveries and dangers beyond the imagination.  Stop. Think. Breathe. This expedition is the start of a journey larger than life. Are you ready?  This NFT was claimable for 50 Fragments in the initial Swapr Expeditions event.",  
+    "image": "ipfs:/REPLACE/1.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 50
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Common"
+        }
+    ]
+  }

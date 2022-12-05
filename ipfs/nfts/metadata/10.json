@@ -1,0 +1,19 @@
+{
+    "name": "Visions of Grandeur",
+    "description": "You dream of splendor. A vision so surreal, representing the resounding success of your journey. This NFT was claimable for 1500 Fragments in the initial Swapr Expeditions event. It grants the “grandeur” profile accent at https://swapr.eth.limo/ to the NFT holder.",  
+    "image": "ipfs://QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/10.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 1500
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Legendary"
+        }
+    ]
+  }

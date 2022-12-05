@@ -1,0 +1,19 @@
+{
+    "name": "Launch",
+    "description": "Adventure lay ahead. The fate of you and your people rests solely in your hands. You fire the engines of your small craft and, in a fiery blaze, exit the atmosphere. This NFT was claimable for 1250 Fragments in the initial Swapr Expeditions event.",  
+    "image": "ipfs://QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/9.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 1250
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Legendary"
+        }
+    ]
+  }

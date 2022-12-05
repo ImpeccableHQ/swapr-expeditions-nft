@@ -1,0 +1,10 @@
+{
+  "deployer": "0x8a5749A90C334953fD068aCA14F1044eb3F7dFDd",
+  "tokenEmitter": "0x8a5749A90C334953fD068aCA14F1044eb3F7dFDd",
+  "name": "Test Collection Name",
+  "contractURI": "ipfs://QmbhiYwsaw7E2Nxfrqj4oHGGsJt7N2xkiJGkzSZEserWEe",
+  "baseURI": "ipfs://QmbMQrGigoRnNeLFX4zb9WGV8kboh8ZEfGHqgHswd6Kd2A/",
+  "domainName": "Swapr Expeditions",
+  "version": "1",
+  "address": "0x8b6602E5648f1ED4dc6E04c2D9d0f7bEb36FCf15"
+}

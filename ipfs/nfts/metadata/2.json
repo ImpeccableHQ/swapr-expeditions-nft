@@ -1,0 +1,19 @@
+{
+    "name": "Visions of Scourge",
+    "description": "You dream of a world plagued. The Pestilence paints a beautiful mockery of life and death. So... familiar. This NFT was claimable for 100 Fragments in the initial Swapr Expeditions event. It grants the “scourge” profile accent at https://swapr.eth.limo/ to the NFT holder.",  
+    "image": "ipfs://QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/2.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 100
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Common"
+        }
+    ]
+  }

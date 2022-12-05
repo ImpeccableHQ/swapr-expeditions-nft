@@ -1,0 +1,19 @@
+{
+    "name": "Wayfarer",
+    "description": "Have you made peace with your future? A life of pilgrimage and uncertainty. Prospect and vulnerability. You gather yourself and return to your vessel. This NFT was claimable for 450 Fragments in the initial Swapr Expeditions event.",  
+    "image": "ipfs://QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/5.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 450
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Rare"
+        }
+    ]
+  }

@@ -1,0 +1,19 @@
+{
+    "name": "Visions of Creation",
+    "description": "Elaborate visions of a perfect world. Your home now a distant memory in the far reaches of your mind. This NFT was claimable for 300 Fragments in the initial Swapr Expeditions event. It grants the “creation” profile accent at https://swapr.eth.limo/ to the NFT holder.",  
+    "image": "ipfs://QmRo7LhZFJHkVqKkQL9ySbEX1pyPXVvUZ7Xz9zDQNK765f/4.png", 
+    "attributes": [
+        {
+            "trait_type": "Campaign",
+            "value": "Launch Expedition"
+        },
+        {
+            "trait_type": "Fragments",
+            "value": 300
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Uncommon"
+        }
+    ]
+  }
