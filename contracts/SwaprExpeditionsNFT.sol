@@ -70,6 +70,19 @@ contract SwaprExpeditionsNFT is Ownable, ERC1155URIStorage, EIP712 {
         tokenEmitter = _tokenEmitter;
     }
 
+    function getRewardsStatus() external view returns(bool[] memory){
+        uint256 rewardsCount = _tokenIds.current();
+        bool[] memory rewardsStatus = new bool[](rewardsCount);
+
+        for (uint256 i = 0; i < rewardsCount; ++i) {
+            if (balanceOf(msg.sender, i+1) > 0) {
+                rewardsStatus[i] = true;    
+            }
+        }
+
+        return rewardsStatus;
+    }
+
     function addRewards(string[] memory uris) external onlyOwner {
         for(uint256 i = 0; i < uris.length; ++i) {
             _tokenIds.increment();

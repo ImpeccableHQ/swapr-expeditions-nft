@@ -27,6 +27,11 @@ describe('SwaprExpeditionsrNFT', () => {
 
   let nft: SwaprExpeditionsNFT;
 
+  let createSignature: (
+    data: ClaimingData,
+    signer?: SignerWithAddress
+  ) => Promise<string>;
+
   beforeEach(async () => {
     [owner, tokenEmitter, user] = await ethers.getSigners();
 
@@ -38,6 +43,31 @@ describe('SwaprExpeditionsrNFT', () => {
       domainName,
       domainVersion
     );
+
+    createSignature = async (
+      data: ClaimingData,
+      signer?: SignerWithAddress
+    ) => {
+      signer = signer || tokenEmitter;
+
+      const domain = {
+        name: domainName,
+        version: domainVersion,
+        chainId: chainId,
+        verifyingContract: nft.address,
+      };
+
+      const types = {
+        ClaimingData: [
+          { name: 'receiver', type: 'address' },
+          { name: 'tokenId', type: 'uint256' },
+        ],
+      };
+
+      const signature = await signer._signTypedData(domain, types, data);
+
+      return signature;
+    };
   });
   describe('updateName', () => {
     it('reverts when called by non-owner', async () => {
@@ -173,40 +203,11 @@ describe('SwaprExpeditionsrNFT', () => {
   });
 
   describe('claimReward', () => {
-    let createSignature: (
-      data: ClaimingData,
-      signer?: SignerWithAddress
-    ) => Promise<string>;
-
     beforeEach(async () => {
       const tx = await nft.connect(owner).addRewards([uris[0]]);
       await tx.wait();
-
-      createSignature = async (
-        data: ClaimingData,
-        signer?: SignerWithAddress
-      ) => {
-        signer = signer || tokenEmitter;
-
-        const domain = {
-          name: domainName,
-          version: domainVersion,
-          chainId: chainId,
-          verifyingContract: nft.address,
-        };
-
-        const types = {
-          ClaimingData: [
-            { name: 'receiver', type: 'address' },
-            { name: 'tokenId', type: 'uint256' },
-          ],
-        };
-
-        const signature = await signer._signTypedData(domain, types, data);
-
-        return signature;
-      };
     });
+
     it('reverts when signature was not signed by tokenEmitter', async () => {
       const signature = await createSignature(
         {
@@ -268,6 +269,31 @@ describe('SwaprExpeditionsrNFT', () => {
 
       const userBalance = await nft.balanceOf(user.address, 1);
       expect(userBalance.toString()).to.equal('1');
+    });
+  });
+  describe.only('getRewardsStatus', () => {
+    it('returns correct status of claimed rewards', async () => {
+      const tx = await nft.connect(owner).addRewards(uris);
+      await tx.wait();
+
+      const token1Sig = await createSignature({
+        receiver: user.address,
+        tokenId: 1,
+      });
+      await nft.connect(user).claimReward(1, token1Sig);
+
+      const token3Sig = await createSignature({
+        receiver: user.address,
+        tokenId: 3,
+      });
+
+      await nft.connect(user).claimReward(3, token3Sig);
+
+      const rewardsBalance = await nft.connect(user).getRewardsStatus();
+
+      expect(rewardsBalance[0]).to.be.true;
+      expect(rewardsBalance[1]).to.be.false;
+      expect(rewardsBalance[2]).to.be.true;
     });
   });
 });
